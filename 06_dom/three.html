@@ -27,3 +27,14 @@
     document.body.appendChild(div) // then last when all work of selected element 'here selected element div' is completed then append in the body of webpage. [text]->[selected element]->[body]
 </script>
 </html>
+
+
+
+
+<!-- for creation of text part there are two  way -->
+<!-- (1). div.innerText = "Chai aur code" -->
+        <!-- In this there is problem bcz dom is tree str and when it line apply for creating the text then first travese all node the append the this variable as end node into the DOM tree. -->
+
+<!-- (2). const addText = document.createTextNode("Chai aur code") 
+    div.appendChild(addText) -->
+    <!-- but this is optimize way directly append the create node that anything text or other element etc at end of DOM tree. So most of the case 'createTextNode' use. -->
