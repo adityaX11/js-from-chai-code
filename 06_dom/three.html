@@ -1,3 +1,6 @@
+
+// Basically here we learn about the how the DOM manipulated with the webpage and how the dom work behind the secen basically it work as node-tree. 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +13,17 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
+    const div = document.createElement('div') // this work on in memory. basically create the a element that is div.
     console.log(div);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
+    div.className = "main" // give the class name of selected div
+    div.id = Math.round(Math.random() * 10 + 1)  // given the id by using math library.
+    div.setAttribute("title", "generated title") // this is another method to set attribute of selected element.
+    div.style.backgroundColor = "green"     // set the styling according to your choice, 
     div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
+    // div.innerText = "Chai aur code"     // method to create text
+    const addText = document.createTextNode("Chai aur code") // this another method to create the text. store in the variable and append in the selected element. basically here create a node and append the dom tree.
+    div.appendChild(addText)  // append here.
 
-    document.body.appendChild(div)
+    document.body.appendChild(div) // then last when all work of selected element 'here selected element div' is completed then append in the body of webpage. [text]->[selected element]->[body]
 </script>
 </html>
